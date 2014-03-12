@@ -55,7 +55,7 @@ Run the script:
 If you get any errors, then use nano again and examine your script for errors.
 
 #####Script: rgbledtest.sh
-```python
+```shell
 #!/bin/sh
 # Bash uses BCM GPIO numbers (i.e. the pin names of the Broadcom Chip itself)
 # These are detailed in the Raspberry Pi wiki pages.
@@ -132,13 +132,13 @@ echo "$LED_BLUE" > /sys/class/gpio/unexport
 By using the = sign we are able to assign values to “variables”, this gives us an easy way to make our script easy to modify (for instance if we change the wiring).  To reference a “variable” the $ sign is used, this tells Bash to look for a variable and put whatever it is value is in its place.
 
 For instance:
-```python
+```shell
 PIN12=18
 LED01=$PIN12
 ```
 
 Is the same as:
-```python
+```shell
 LED01=18
 ```
 
@@ -147,27 +147,27 @@ The script includes the mapping for all the pins used by the RGB LED board, so y
 To use a GPIO pin in Bash, you have to do the following:
 
 1. Export the pin number:
-```python
+```shell
 echo "$LED01" > /sys/class/gpio/export
 ```
 2. Set the direction of the pin (input = “in” or output = “out”):
-```python
+```shell
 echo "out" > /sys/class/gpio/gpio$LED01/direction
 ```
 3. Initialise it to a safe/default state:
-```python
+```shell
 echo "$LED_DISABLE" > /sys/class/gpio/gpio$LED01/value
 ```
 4. Use it, by setting it to a value 0 or 1:
-```python
+```shell
 echo "$LED_ENABLE" > /sys/class/gpio/gpio$LED01/value
 ```
 5. Return it to a safe/default state (not required but good practice):
-```python
+```shell
 echo "$LED_DISABLE" > /sys/class/gpio/gpio$LED01/value
 ```
 6. Release the pin when you are done with it:
-```python
+```shell
 echo "$LED01" > /sys/class/gpio/unexport
 ```
 Finally, we use sleep to provide a 1s (1 second) delay between actions.
