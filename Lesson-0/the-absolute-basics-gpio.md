@@ -1,6 +1,6 @@
 # RGB-LED Lesson 0 – The Absolute Basics GPIO
 
-This lesson is directly based on the supplied material contained within the User Manual of the RGB-LED Kit.
+This lesson is directly based on the supplied material contained within the **User Manual of the RGB-LED Kit** by [**PiHardware.com**](http://pihwardware.com).
 
 If you have the kit and have already completed the manual, then you may wish to skip to the bottom and try the “extra credit” exercises and move onto Lesson 1.
 
@@ -277,7 +277,7 @@ The following exercises can be performed using both Bash and Python.
 
 To create a loop using Bash, the following code can be used:
 
-```python
+```shell
 for i in 1 2 3 4 5 6 7 8 9 10
   do
   #write output
@@ -298,4 +298,7 @@ for i in range(10):
 1. Try extending each of the examples to cycle through the colours and each LED in turn.
 2. Try using a combination of RGB to create more colours.
 
-###Next RGB-LED Lesson 1 – Creating Python Libraries (& Colours)
+
+###[RGB-LED Lesson 0 – Extra Credit Solution](http://pihw.wordpress.com/lessons/lesson-0-extra-credit-solutions/)
+
+###[Next RGB-LED Lesson 1 – Creating Python Libraries (& Colours)](http://pihw.wordpress.com/lessons/rgb-led-lesson-1-creating-python-libraries-colours/)
