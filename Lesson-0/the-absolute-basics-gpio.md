@@ -13,7 +13,7 @@ Driving the RGB-LED Kits from the Raspberry Pi GPIO – [For details on the Kit]
 ## Basic Programming:
 Within these instructions, we shall only cover some very basic programming, more detailed examples and tutorials will be made available from the “Meltwater Raspberry Pi Hardware” site [http://pihw.wordpress.com/](http://pihw.wordpress.com/) in the learning section.
 
-It is highly recommended that you take the time to type coding examples in yourself (even if the source is available).  By doing so you will become familiar with the syntax and format of the commands and you will learn it far quicker than if you cut and pasted it.
+It is highly recommended that you take the time to type coding examples in yourself (even if the source is available).  By doing so you will become familiar with the syntax and format of the commands and you will learn it far quicker than if you cut and paste it.
 
 ### Setup:
 
@@ -172,7 +172,7 @@ To use a GPIO pin in Bash, you have to do the following:
 
 Finally, we use sleep to provide a 1s (1 second) delay between actions.
 
-**That covers the very basics!  I’ll extend this example and demonstrate some additional methods next time.**
+**That covers the very basics!  Next we will look at how to do something similar using Python.**
 
 
 
