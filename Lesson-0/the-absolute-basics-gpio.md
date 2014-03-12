@@ -32,9 +32,8 @@ See below for the correct orientation of the GPIO Port (P1).
 ![alt text](http://pihw.files.wordpress.com/2013/02/rpigpiop1.jpg?w=614 "Raspberry Pi GPIO Port Pins")
 
 #### SD Card Image:
-The guides will assume a clean, up to date system image.  To obtain the latest Raspbian “wheezy” SD Card image, and for details on how to write it to your SD Card see the Raspberry Pi Homepage download section [http://www.raspberrypi.org/downloads](http://www.raspberrypi.org/downloads).
+The guides will assume a clean, up to date system image.  To obtain the latest Raspbian SD Card image, and for details on how to write it to your SD Card see the Raspberry Pi Homepage download section [http://www.raspberrypi.org/downloads](http://www.raspberrypi.org/downloads).
 
-At the time of writing, the latest image is 12-12-16-wheezy-raspbian.  Please refer to the following Adafruit guides on writing your SD-Card [http://goo.gl/Rht2v](http://goo.gl/Rht2v) and setting up a Raspberry Pi for the first time [http://goo.gl/Gf2f5](http://goo.gl/Gf2f5) if you need help.
 
 ###Using Bash (controlling LEDs using basic scripting):
 First we will write a short program script using Bash.  Bash is a common shell used with Linux, it allows you to write basic commands, and importantly for us to write and run scripts (a long list of commands).
@@ -147,29 +146,30 @@ The script includes the mapping for all the pins used by the RGB LED board, so y
 To use a GPIO pin in Bash, you have to do the following:
 
 1. Export the pin number:
-```shell
-echo "$LED01" > /sys/class/gpio/export
-```
+  ```
+  echo "$LED01" > /sys/class/gpio/export
+  ```
 2. Set the direction of the pin (input = “in” or output = “out”):
-```shell
-echo "out" > /sys/class/gpio/gpio$LED01/direction
-```
+  ```
+  echo "out" > /sys/class/gpio/gpio$LED01/direction
+  ```
 3. Initialise it to a safe/default state:
-```shell
-echo "$LED_DISABLE" > /sys/class/gpio/gpio$LED01/value
-```
+  ```
+  echo "$LED_DISABLE" > /sys/class/gpio/gpio$LED01/value
+  ```
 4. Use it, by setting it to a value 0 or 1:
-```shell
-echo "$LED_ENABLE" > /sys/class/gpio/gpio$LED01/value
-```
+  ```
+  echo "$LED_ENABLE" > /sys/class/gpio/gpio$LED01/value
+  ```
 5. Return it to a safe/default state (not required but good practice):
-```shell
-echo "$LED_DISABLE" > /sys/class/gpio/gpio$LED01/value
-```
+  ```
+  echo "$LED_DISABLE" > /sys/class/gpio/gpio$LED01/value
+  ```
 6. Release the pin when you are done with it:
-```shell
-echo "$LED01" > /sys/class/gpio/unexport
-```
+  ```
+  echo "$LED01" > /sys/class/gpio/unexport
+  ```
+
 Finally, we use sleep to provide a 1s (1 second) delay between actions.
 
 **That covers the very basics!  I’ll extend this example and demonstrate some additional methods next time.**
