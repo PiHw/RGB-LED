@@ -21,15 +21,25 @@ It is highly recommended that you take the time to type coding examples in yours
 
 Unless specified otherwise, the guides and tutorials will assume you have your board wired up as follows (although we should always aim to make it easy in our programs to adapt the wiring if required).
 
+<!--
 | **RGB LED**     |     |     |     |     | 01  |     | 02  | 03  |     | 04  |     |     |
 |:-------------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | **RPi GPIO Pin**  | 2 | 4 | 6 | 8 | 10 | 12 | 14 | 16 | 18 | 20 | 22 | 24 | 26 |
 | **Rpi GPIO Pin**  | 1 | 3 | 5 | 7 | 9  | 11 | 13 | 15 | 17 | 19 | 21 | 23 | 25 |
 | **RGB LED**     |     |     |     |**05**|     |**R**|**G**|**B**|     |     |     |     |
+-->
+
+
+| **RGB LED**     |     |     |     |     | 01  |     | 02  | 03  |     | 04  |     |     |          |<|-|***Plus***|***Model***|***Only***|-|>|
+|:-------------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **RPi GPIO Pin**  | 2 | 4 | 6 | 8 | 10 | 12 | 14 | 16 | 18 | 20 | 22 | 24 | 26 | ***28*** | ***30*** | ***32*** | ***34*** | ***36*** | ***38*** | ***40*** |
+| **Rpi GPIO Pin**  | 1 | 3 | 5 | 7 | 9  | 11 | 13 | 15 | 17 | 19 | 21 | 23 | 25 | ***27*** | ***29*** | ***31*** | ***33*** | ***35*** | ***37*** | ***39*** |
+| **RGB LED**     |     |     |     |**05**|     |**R**|**G**|**B**|     |     |     |     |     |<|-|***Plus***|***Model***|***Only***|-|>|
 
 See below for the correct orientation of the GPIO Port (P1).
 
 ![alt text](http://pihw.files.wordpress.com/2013/02/rpigpiop1.jpg?w=614 "Raspberry Pi GPIO Port Pins")
+![alt text](http://pihw.files.wordpress.com/2013/02/rpigpiop1plus.jpg?w=614 "Raspberry Pi Plus Model GPIO Port Pins")
 
 #### SD Card Image:
 The guides will assume a clean, up to date system image.  To obtain the latest Raspbian SD Card image, and for details on how to write it to your SD Card see the Raspberry Pi Homepage download section [http://www.raspberrypi.org/downloads](http://www.raspberrypi.org/downloads).
