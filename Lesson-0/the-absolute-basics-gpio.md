@@ -39,7 +39,7 @@ Unless specified otherwise, the guides and tutorials will assume you have your b
 See below for the correct orientation of the GPIO Port (P1).
 
 ![alt text](http://pihw.files.wordpress.com/2013/02/rpigpiop1.jpg?w=614 "Raspberry Pi GPIO Port Pins")
-![alt text](https://pihw.files.wordpress.com/2014/09/rpigpiop1plus.png?w=614 "Raspberry Pi Plus Model GPIO Port Pins")
+<img src="http://pihw.files.wordpress.com/2014/09/rpigpiop1plus.png?w=300" alt="rpigpiop1plus" width="300" height="140" class="alignnone size-medium wp-image-1751" />
 
 #### SD Card Image:
 The guides will assume a clean, up to date system image.  To obtain the latest Raspbian SD Card image, and for details on how to write it to your SD Card see the Raspberry Pi Homepage download section [http://www.raspberrypi.org/downloads](http://www.raspberrypi.org/downloads).
