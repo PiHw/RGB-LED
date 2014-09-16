@@ -21,7 +21,7 @@ It is highly recommended that you take the time to type coding examples in yours
 
 Unless specified otherwise, the guides and tutorials will assume you have your board wired up as follows (although we should always aim to make it easy in our programs to adapt the wiring if required).
 
-<!--
+<!-- Old GPIO table
 | **RGB LED**     |     |     |     |     | 01  |     | 02  | 03  |     | 04  |     |     |
 |:-------------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | **RPi GPIO Pin**  | 2 | 4 | 6 | 8 | 10 | 12 | 14 | 16 | 18 | 20 | 22 | 24 | 26 |
@@ -39,7 +39,7 @@ Unless specified otherwise, the guides and tutorials will assume you have your b
 See below for the correct orientation of the GPIO Port (P1).
 
 ![alt text](http://pihw.files.wordpress.com/2013/02/rpigpiop1.jpg?w=614 "Raspberry Pi GPIO Port Pins")
-![alt text](http://pihw.files.wordpress.com/2013/02/rpigpiop1plus.jpg?w=614 "Raspberry Pi Plus Model GPIO Port Pins")
+![alt text](https://pihw.files.wordpress.com/2014/09/rpigpiop1plus.png?w=614 "Raspberry Pi Plus Model GPIO Port Pins")
 
 #### SD Card Image:
 The guides will assume a clean, up to date system image.  To obtain the latest Raspbian SD Card image, and for details on how to write it to your SD Card see the Raspberry Pi Homepage download section [http://www.raspberrypi.org/downloads](http://www.raspberrypi.org/downloads).
